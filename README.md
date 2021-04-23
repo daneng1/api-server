@@ -4,8 +4,8 @@
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/daneng1/basic-api-server/actions/runs/772677068)
-- [back-end server url](https://danengel-basic-api-server.herokuapp.com/)
+- [ci/cd](https://github.com/daneng1/api-server/actions/runs/776422472)
+- [back-end server url](https://danengel-api-server.herokuapp.com/)
 
 
 ### Setup
