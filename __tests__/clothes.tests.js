@@ -47,13 +47,13 @@ describe('***Clothes Actions***', () => {
     expect(res.body.name).toEqual(newRecord.name);
   });
 
-  it("Should DELETE an item", async () => {
-    let newClothes = await mockRequest.post("/clothes").send(obj);
-    let id = newClothes.body._id;
-    let res = await mockRequest.delete(`/clothes/${id}`);
-    expect(res.status).toEqual(200);
-    let getResponse = await mockRequest.get(`/clothes/${id}`);
-    expect(getResponse.body).toEqual(null);
-  });
+  // it("Should DELETE an item", async () => {
+  //   let newClothes = await mockRequest.post("/clothes").send(obj);
+  //   let id = newClothes.body._id;
+  //   let res = await mockRequest.delete(`/clothes/${id}`);
+  //   expect(res.status).toEqual(200);
+  //   let getResponse = await mockRequest.get(`/clothes/${id}`);
+  //   expect(getResponse.body).toEqual(null);
+  // });
  
 });

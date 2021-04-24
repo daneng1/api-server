@@ -7,7 +7,7 @@
     "test": "jest --verbose",
     "test-watch": "jest --verbose --watchAll",
     "dev": "nodemon index.js",
-    "start": " node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
