@@ -13,14 +13,14 @@ const notFound = require('./error-handlers/404.js');
 const error = require('./error-handlers/500.js');
 
 app.use(express.json());
-
-app.use(cors);
+app.use(express.urlencoded());
+app.use(cors());
 app.use(logger);
 app.use(food);
 app.use(clothes);
 app.use(todo);
 
-app.use('*', notFound);
+app.use('/*', notFound);
 app.use(error);
 
 module.exports = {
