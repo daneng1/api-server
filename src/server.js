@@ -2,6 +2,7 @@
 
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
 const logger = require('./middleware/logger.js');
 const clothes = require('./routes/clothes');
@@ -13,6 +14,7 @@ const error = require('./error-handlers/500.js');
 
 app.use(express.json());
 
+app.use(cors);
 app.use(logger);
 app.use(food);
 app.use(clothes);
