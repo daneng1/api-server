@@ -16,7 +16,7 @@ router.delete('/todo/:id', deleteTodo);
 
 async function getTodo(req, res) {
   let getAllTodo = await todo.read();
-  console.log(getAllTodo);
+  console.log('inside getTodo', getAllTodo);
   res.status(200).json(getAllTodo);
 }
 
@@ -27,6 +27,7 @@ async function getOneTodo(req, res) {
 }
 
 async function createTodo(req,res) {
+  console.log(req.body);
   let content = req.body;
   let createdTodo = await todo.create(content);
   res.status(201).json(createdTodo);
