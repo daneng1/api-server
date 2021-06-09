@@ -10,6 +10,6 @@ const productSchema = mongoose.Schema({
   inventory: { type:Number, required: true},
 });
 
-const productModel = mongoose.model('clothes', productSchema);
+const productModel = mongoose.model('products', productSchema);
 
 module.exports = productModel;
