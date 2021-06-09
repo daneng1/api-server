@@ -8,6 +8,7 @@ const logger = require('./middleware/logger.js');
 const clothes = require('./routes/clothes');
 const food = require('./routes/food');
 const todo = require('./routes/todo');
+const product = require('./routes/product');
 
 const notFound = require('./error-handlers/404.js');
 const error = require('./error-handlers/500.js');
@@ -19,6 +20,7 @@ app.use(logger);
 app.use(food);
 app.use(clothes);
 app.use(todo);
+app.use(product);
 
 app.use('/*', notFound);
 app.use(error);
